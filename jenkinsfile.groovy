@@ -10,7 +10,7 @@ pipeline {
                 sh '''
                 
                 #docker build --tag ubuntu-original:focal --file
-                curl https://partner-images.canonical.com/core/focal/current/ubuntu-focal-core-cloudimg-amd64-root.tar.gz
+                curl -s 'https://partner-images.canonical.com/core/focal/current/ubuntu-focal-core-cloudimg-amd64-root.tar.gz' > /dev/null
                 docker build --no-cache -t ubuntu-original:focal -f ubuntu-focal-original .
                 
                 '''

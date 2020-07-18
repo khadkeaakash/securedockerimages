@@ -10,7 +10,7 @@ pipeline {
                 sh '''
                 
                 #docker build --tag ubuntu-original:focal --file 
-                docker build --no-cache -t ubuntu-original:focal -f ubuntu-focal-original context
+                docker build --no-cache -t ubuntu-original:focal -f ubuntu-focal-original .
                 
                 '''
             } //end of steps

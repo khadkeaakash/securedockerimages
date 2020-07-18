@@ -6,7 +6,12 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building..'
+                echo 'Building docker image for ubuntu'
+                sh '''
+                
+                docker build -f ubuntu-focal-original
+                
+                '''
             } //end of steps
         } //end of stage build
 

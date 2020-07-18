@@ -9,7 +9,7 @@ pipeline {
                 echo 'Building docker image for ubuntu'
                 sh '''
                 
-                docker build -f ubuntu-focal-original
+                docker build --tag ubuntu-original:focal -f ubuntu-focal-original
                 
                 '''
             } //end of steps

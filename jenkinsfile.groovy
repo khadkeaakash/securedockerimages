@@ -1,22 +1,14 @@
 
 pipeline {
-    agent {label "ubuntu"}
+    agent {label "ubuntu"
+          }//end of agent
 
     stages {
         stage('Build') {
             steps {
                 echo 'Building..'
-            }
-        }
-        stage('Test') {
-            steps {
-                echo 'Testing..'
-            }
-        }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying....'
-            }
-        }
-    }
-}
+            } //end of steps
+        } //end of stage build
+
+    } //end of stages
+} //end of pipeline
